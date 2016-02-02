@@ -12,6 +12,17 @@ img {
   flex-direction: column;
 }
 
+.smallContainer{
+  display: flex;
+  flex-direction: row;
+}
+
+.sumSum{
+  padding: 0px 20px 20px 20px;
+  margin-top: -60px;
+
+}
+
 main {
   display: flex;
   flex-direction: column;
