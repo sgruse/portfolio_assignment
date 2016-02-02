@@ -1,0 +1,58 @@
+img {
+  height: 100px;
+  weight: 100px;
+}
+
+.template {
+  display: none;
+}
+
+#projectSection{
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 300px);
+  padding: 20px 20px 20px 20px;
+}
+
+.nav {
+  padding: 20px;
+  /*background: red;*/
+  text-align: center;
+}
+
+ul {
+  border: 1px solid #555;
+  text-align: center;
+}
+
+ul > li {
+  list-style: none;
+  display: inline;
+  text-align: center;
+  /*border-bottom: 1px solid #555;*/
+}
+
+footer {
+  padding: 20px;
+  background: #666;
+}
+
+.topHead {
+ padding: 20px;
+ /*background: #666;*/
+ text-align: center;
+}
+
+.body {
+  /*background: pink;*/
+  flex-grow: 1;
+}
+
+  @media (max-width: 800px)
+    .body
+      flex-direction: column
