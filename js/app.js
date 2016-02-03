@@ -24,7 +24,6 @@ Project.prototype.toHtml = function() {
   return $newProject;
 };
 
-
 gitProjects.sort(function(a,b) {
   return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
 });
