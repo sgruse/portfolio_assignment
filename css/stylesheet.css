@@ -26,7 +26,7 @@ main {
 }
 
 .nav {
-  background: red;
+  /*background: red;*/
   padding: 20px;
   /*background: red;*/
   /*text-align: center;*/
@@ -44,7 +44,7 @@ ul {
 
 ul > li {
   list-style: none;
-  /*display: inline;*/
+  display: inline;
   padding: 1px;
   /*text-align: center;*/
   /*border-bottom: 1px solid #555;*/
