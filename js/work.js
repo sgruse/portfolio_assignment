@@ -3,7 +3,7 @@
 var objectControllers = {};
 
 objectControllers.handleMainNav = function() {
-  $('.nav').on('click', 'button', function(){
+  $('.hidden li').on('click', 'a', function(){
     var $main = $('main > section');
     var $navClick = $(this).data('category');
     $main.hide();
@@ -20,3 +20,7 @@ $(document).ready(function(){
   $('#introduction').hide();
   objectControllers.handleMainNav();
 });
+
+// $('#nav-menu li').on('click', 'a', function(){
+//   $('#introduction').show();
+// })

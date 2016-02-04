@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name=”viewport” content=”width=device-width, initial-scale=1”>
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/stylesheet.css">
-    <link rel="stylesheet" href="css/demo.css">
     <link rel="stylesheet" href="css/icons.css">
   </head>
   <body>
@@ -13,14 +13,28 @@
       </header>
 
       <nav class="nav">
-        <ul>
-          <button data-category="introduction">About</button>
-          <button data-category="projectSection">My Projects</button>
-          <li><a class="icon-github" href="https://github.com/sgruse">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
-          <li><a href="https://twitter.com">Twitter</a></li>
-        </ul>
-      </nav>
+        <ul id="nav-menu" class="hidden">
+          <li><a href="#" data-category="introduction">Home</a></li>
+        <li><a href="#">Projects</a>
+          <ul class="hidden">
+            <li><a href="#" data-category="projectSection">Mic Check</a></li>
+            <li><a href="#" data-category="projectSection">Buss Mall</a></li>
+            <li><a href="#" data-category="projectSection">Campfire Coffee</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Social</a>
+          <ul class="hidden">
+            <li><a href="https://github.com/sgruse" class="icon-github">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/" class="icon-link">LinkedIn</a></li>
+            <li><a href="https://twitter.com/" class="icon-twitter3">Twitter</a></li>
+          </ul>
+        </li>
+        <li>
+        <a href="http://www.gmail.com">Connect</a>
+      </li>
+      </ul>
+    </nav>
 
       <main>
         <section id="introduction">
