@@ -1,3 +1,9 @@
+.topHead {
+ padding: 20px;
+ background: #666;
+ text-align: center;
+}
+
 img {
   height: 100px;
   weight: 100px;
@@ -20,21 +26,27 @@ main {
 }
 
 .nav {
+  background: red;
   padding: 20px;
   /*background: red;*/
-  text-align: center;
+  /*text-align: center;*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 ul {
-  border: 1px solid #555;
-  text-align: center;
-  hei
+  /*border: 1px solid #555;*/
+  /*text-align: center;*/
+  display: inline;
+  padding: 1%;
 }
 
 ul > li {
   list-style: none;
-  display: inline;
-  text-align: center;
+  /*display: inline;*/
+  padding: 1px;
+  /*text-align: center;*/
   /*border-bottom: 1px solid #555;*/
 }
 
@@ -48,17 +60,11 @@ footer {
   background: #666;
 }
 
-.topHead {
- padding: 20px;
- /*background: #666;*/
- text-align: center;
-}
-
 .body {
   /*background: pink;*/
   flex-grow: 1;
 }
 
-  @media (max-width: 800px)
+  @media only screen and (min-width: 650px)
     .body
       flex-direction: column
