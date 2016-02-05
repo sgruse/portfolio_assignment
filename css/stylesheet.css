@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: ;
+  background-color: 
 }
 
 .topHead {
@@ -99,11 +99,6 @@ ul li a:hover + .hidden, .hidden:hover {
 
 input[type=checkbox]:checked ~ #menu {
   display: block;
-}
-
-
-.template {
-  display: none;
 }
 
 #projectSection{
