@@ -2,7 +2,7 @@
 
 var gitProjects = [
   {
-    projectName: 'Mic Check',
+    projectName: 'mic-check',
     projectUrl: 'http://bgarnaat.github.io/starving_artists/index.html',
     publishedOn: '2016-1-28',
     projectImg: 'img/screen1.png',
@@ -10,7 +10,7 @@ var gitProjects = [
   },
 
   {
-    projectName: 'Buss Mall',
+    projectName: 'buss-mall',
     projectUrl: 'http://sgruse.github.io/bussMall',
     publishedOn: '2016-1-23',
     projectImg: 'img/screen2.png',
