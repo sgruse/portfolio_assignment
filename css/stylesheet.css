@@ -3,13 +3,14 @@
 }
 
 body {
-  background-color: 
+  /*background-color: grey;*/
 }
 
 .topHead {
  padding: 20px;
- background: #ae9c96;
+ /*background: #ae9c96;*/
  text-align: center;
+ /*background-image:url('../img/geopic1.jpg');*/
 }
 
 nav {
