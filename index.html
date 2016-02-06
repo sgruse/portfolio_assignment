@@ -6,8 +6,8 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="css/icons.css">
-    <script type="text/x-handlebars-template" id="entry-template">
 
+    <script type="text/x-handlebars-template" id="entry-template">
         <section class="{{projectName}}" data-author="{{author}}">
           <h1>Projects</h1>
           <article>
@@ -36,10 +36,10 @@
       </header>
 
       <nav class="nav">
-        <ul id="nav-menu" class="hidden">
+        <ul id="nav-menu" class="hidden flex-box">
           <li class="tab"><a href="#" data-category="introduction">Home</a></li>
         <li class="tab"><a href="#">Projects</a>
-          <ul class="hidden">
+          <ul class="hidden absolute">
             <li class="tab"><a href="#" data-category="mic-check">Mic Check</a></li>
             <li class="tab"><a href="#" data-category="buss-mall">Buss Mall</a></li>
             <li class="tab"><a href="#" data-category="campfire-coffee">Campfire Coffee</a></li>
@@ -47,7 +47,7 @@
         </li>
         <li>
           <a href="#">Social</a>
-          <ul class="hidden">
+          <ul class="hidden absolute">
             <li><a href="https://github.com/sgruse" class="icon-github">GitHub</a></li>
             <li><a href="https://www.linkedin.com/" class="icon-link">LinkedIn</a></li>
             <li><a href="https://twitter.com/" class="icon-twitter3">Twitter</a></li>
