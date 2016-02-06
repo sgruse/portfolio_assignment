@@ -20,23 +20,6 @@ Project.prototype.toHtml = function(){
   return template(this);
 };
 
-
-
-
-// Project.prototype.toHtml = function() {
-//   var $newProject = $('article.template').clone();
-//
-//   $newProject.find('header h3').text(this.projectName);
-//   $newProject.find('img').attr('src', this.projectImg);
-//   $newProject.find('address a').attr('href', this.projectUrl);
-//   $newProject.find('.summary').html(this.details);
-//   $newProject.find('time').html('about ' + parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000) + ' days ago');
-//
-//   $newProject.append('<hr>');
-//   $newProject.removeClass('template');
-//   return $newProject;
-// };
-
 gitProjects.sort(function(a,b) {
   return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
 });

@@ -3,19 +3,35 @@
 }
 
 body {
-  background-color: 
+  /*background-color: grey;*/
 }
 
 .topHead {
  padding: 20px;
- background: #ae9c96;
+ position: relative;
+ /*background: #ae9c96;*/
  text-align: center;
+}
+
+.topHead::after{
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  position: absolute;
+  opacity: .07;
+  z-index: -1;
+  background-image:url('../img/geopic1.jpg');
+
 }
 
 nav {
 text-align: center;
 padding: 5px;
 }
+
 
 /*nav > a {
   padding: 3px 3px 3px 3px;
@@ -32,6 +48,10 @@ ul {
   padding: 0;
   position: absolute;
 }
+
+/*.absolute {
+  position: absolute;
+}*/
 
 li {
   display: inline-block;
