@@ -1,6 +1,6 @@
 'use strict';
 
-var projects = [];
+// var projects = [];
 
 function Project(opts){
   this.projectName = opts.projectName;
@@ -9,6 +9,10 @@ function Project(opts){
   this.projectImg = opts.projectImg;
   this.details = opts.details;
 };
+
+Project.all = [];
+
+
 
 Project.prototype.toHtml = function(){
   var source = $('#entry-template').text();
@@ -20,14 +24,34 @@ Project.prototype.toHtml = function(){
   return template(this);
 };
 
-gitProjects.sort(function(a,b) {
-  return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
-});
+Project.loadAll = function(gitProjects){
+  gitProjects.sort(function(a,b) {
+    return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
+  });
 
-gitProjects.forEach(function(ele) {
-  projects.push(new Project(ele));
-});
+  gitProjects.forEach(function(ele) {
+    Project.all.push(new Project(ele));
+  });
+};
 
-projects.forEach(function(a){
-  $('#projectSection').append(a.toHtml());
-});
+Project.fetchAll = function(){
+  if(localStorage.gitProjects){
+    Project.loadAll(JSON.parse(localStorage.gitProjects));
+    objectControllers.handleMainNav();
+  } else {
+    $.ajax({
+      type: 'GET',
+      url: 'data/projects.json',
+      success: function(data, message, xhr) {
+        localStorage.setItem('gitProjects', JSON.stringify(data));
+        Project.loadAll(JSON.parse(localStorage.gitProjects));
+        objectControllers.handleMainNav();
+      }
+    });
+  }
+};
+
+
+// projects.forEach(function(a){
+//   $('#projectSection').append(a.toHtml());
+// });
