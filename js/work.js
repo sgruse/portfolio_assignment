@@ -12,8 +12,11 @@ objectControllers.handleMainNav = function(event) {
   });
 };
 
-$(document).ready(function(){
+objectControllers.initIndexPage = function(){
+  Project.all.forEach(function(a){
+    $('#projectSection').append(a.toHtml());
+  });
   $('#projectSection').hide();
   $('.introduction').hide();
   objectControllers.handleMainNav();
-});
+};
