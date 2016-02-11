@@ -145,22 +145,3 @@ footer {
 
 
   @media screen and (min-width: 600px){
-
-ul {
-  position: static;
-  /*display: none;*/
-}
-
-li {
-  margin-bottom: 1px;
-}
-
-ul li, li a {
-  width: 100%;
-}
-/*
-.show-menu {
-  display: block;
-}*/
-
-}
