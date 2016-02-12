@@ -48,8 +48,7 @@ input[type=checkbox]:checked ~ #menu {
 }
 
 #projectSection{
-  /*display: flex;
-  flex-direction: column;*/
+  display: inline;
 }
 
 main {
