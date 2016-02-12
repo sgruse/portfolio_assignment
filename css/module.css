@@ -67,7 +67,7 @@ ul li a:hover{
 }*/
 
 ul li a:hover + .hidden, .hidden:hover {
-  display: block;
+  /*display: block;*/
 }
 
 /* According nav bar (above) */
