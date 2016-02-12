@@ -4,10 +4,13 @@
     <meta charset="utf-8">
     <meta name=”viewport” content=”width=device-width, initial-scale=1”>
     <title>Portfolio</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="css/icons.css">
-    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
-    <!-- <link rel="stylesheet" href="css/skeleton.css"> -->
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/states.css">
+    <link rel="stylesheet" href="css/module.css">
 
     <script type="text/x-handlebars-template" id="entry-template">
         <section class="{{projectName}}" data-author="{{author}}">
@@ -15,7 +18,9 @@
           <article>
             <header>
               <h3>{{projectName}}</h3>
+              <div class="image-container">
               <img src="{{projectImg}}" class="displayPic"/>
+              </div>
               <div class="byLine">
                 <address><a href="">{{projectUrl}}</a></address>
                 published {{publishStatus}}.
@@ -32,7 +37,6 @@
   </head>
 
   <body>
-    <!-- <body background="img/geopic1.jpg"> -->
       <header class="topHead">
         <h1>Sam Gruse</h1>
       </header>
