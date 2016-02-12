@@ -73,3 +73,9 @@ ul li a:hover + .hidden, .hidden:hover {
 /* According nav bar (above) */
 
   @media screen and (min-width: 600px){
+    /*
+    ul li, li a {
+      width: 100%;
+    }*/
+
+  }

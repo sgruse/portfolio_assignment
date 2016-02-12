@@ -7,7 +7,6 @@ objectControllers.handleMainNav = function(event) {
     console.log($(this));
     $('section').hide();
     $('.' + $(this).data('category')).parent().show();
-    // console.log($('.' + $(this).data('category')).parent());
     $('.' + $(this).data('category')).show();
   });
 };

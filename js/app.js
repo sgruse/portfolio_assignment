@@ -1,13 +1,11 @@
 'use strict';
 
 (function(module){
-
+  
   function Project(opts){
-    this.projectName = opts.projectName;
-    this.projectUrl = opts.projectUrl;
-    this.publishedOn = opts.publishedOn;
-    this.projectImg = opts.projectImg;
-    this.details = opts.details;
+    Object.keys(opts).forEach(function(e, index, keys){
+      this[e] = opts[e];
+    },this);
   };
 
   Project.all = [];
