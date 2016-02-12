@@ -23,9 +23,9 @@ body {
   font-family: "Helvetica Neue";
 }
 
-body {
+/*body {
   /*background-color: grey;*/
-}
+}*/
 
 .topHead {
  padding: 20px;
@@ -139,9 +139,9 @@ ul li a:hover + .hidden, .hidden:hover {
   display: none;
 }
 
-input[type=checkbox]:checked ~ #menu {
+/*input[type=checkbox]:checked ~ #menu {
   display: block;
-}
+}*/
 
 #projectSection{
   display: flex;
