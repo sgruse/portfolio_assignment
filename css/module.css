@@ -26,6 +26,7 @@ li a {
   line-height: 50px;
   font-family: "Helvetica Neue";
   color: #fff;
+  border-radius: 5px;
   /*background: #2f3036;*/
   background: #d1c5b7;
   text-decoration: none;

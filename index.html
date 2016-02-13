@@ -22,7 +22,7 @@
               </div>
               <div class="byLine">
                 <address><a href="">{{projectUrl}}</a></address>
-                published {{publishStatus}}.
+                {{publishStatus}}
               </div>
             </header>
             <article>
@@ -36,27 +36,28 @@
   </head>
 
   <body>
+    <background-image class="wallpaper" src="img/portfolio.jpg"/>
       <header class="topHead">
         <h1>Sam Gruse</h1>
       </header>
 
       <nav class="nav">
         <ul id="nav-menu" class="hidden flex-box">
-          <li class="tab"><a href="#" data-category="home">Home</a></li>
+          <li class="tab"><a href="#" data-category="main-page">Home</a></li>
           <li class="tab"><a href="#" data-category="projects">Projects</a>
-          <ul class="hidden absolute">
-          </ul>
-        </li>
-        <li class="tab"><a href="#" data-category="introduction">About</a></li>
+            <ul class="hidden absolute">
+            </ul>
+          </li>
+          <li class="tab"><a href="#" data-category="introduction">About</a></li>
           <!-- <ul class="hidden absolute">
-            <li><a href="https://www.linkedin.com/" class="icon-link">LinkedIn</a></li>
-            <li><a href="https://twitter.com/" class="icon-twitter3">Twitter</a></li>
-            <li><a href="https://github.com/sgruse" class="icon-github">GitHub</a></li>
-          </ul> -->
+          <li><a href="https://www.linkedin.com/" class="icon-link">LinkedIn</a></li>
+          <li><a href="https://twitter.com/" class="icon-twitter3">Twitter</a></li>
+          <li><a href="https://github.com/sgruse" class="icon-github">GitHub</a></li>
+        </ul> -->
         <!-- </li> -->
         <li>
-        <a href="http://www.gmail.com">Connect</a>
-      </li>
+          <a href="http://www.gmail.com">Connect</a>
+        </li>
       </ul>
     </nav>
 
@@ -67,16 +68,24 @@
         <h3>About me:</h3>
         <p>Cupidatat pancetta chuck fugiat shankle dolor drumstick excepteur spare ribs duis. Meatloaf beef ribs et picanha eu in qui dolore tongue enim spare ribs capicola est pork chop swine. Ipsum strip steak nostrud ham hock qui irure. Picanha occaecat prosciutto, rump tempor jerky proident voluptate short loin jowl.</p>
       </section>
+
+      <section class="main-page">
+        <p></p>
+      </section>
+
     </main>
 
-  </main>
+
+
+    <footer></footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
     <script type="text/javascript" src="js/projects.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="js/work.js"></script>
     <script>
-      Project.fetchAll();
+      Project.fetchAll(objectControllers.initIndexPage);
     </script>
   </body>
 </html>
