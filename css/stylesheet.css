@@ -26,11 +26,13 @@
 
 body {
   /*background-image:url('../img/geopic1.jpg');*/
-  /*background-image:url('../img/portfolio.jpg');*/
+  background-image:url('../img/portfolio.jpg');
   position: relative;
   /*max-width: 100%;*/
   /*background-color: grey;*/
 }
+
+
 
 
 /*.everything-wrapper{
