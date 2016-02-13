@@ -1,7 +1,7 @@
 'use strict';
 
 (function(module){
-  
+
   function Project(opts){
     Object.keys(opts).forEach(function(e, index, keys){
       this[e] = opts[e];
