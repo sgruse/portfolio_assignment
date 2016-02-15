@@ -60,7 +60,7 @@
     $.getJSON('data/projects.json', function(gitProjects){
       Project.loadAll(gitProjects);
       localStorage.gitProjects = JSON.stringify(gitProjects);
-      objectControllers.handleMainNav();
+      // objectControllers.handleMainNav();
     });
   };
 
