@@ -2,12 +2,10 @@
 .topHead {
  padding: 20px;
  position: relative;
- /*background: #ae9c96;*/
  text-align: center;
  max-width: 100%;
- /*background-color: grey;*/
- /*background-image:url('../img/geopic1.jpg');*/
- /*background: white;*/
+ background-color: grey;
+
 
 }
 
@@ -21,7 +19,7 @@
   position: absolute;
   opacity: .07;
   z-index: -1;
-  /*background-image:url('../img/geopic1.jpg');*/
+  background-image:url('../img/geopic1.jpg');
 }
 
 body {
@@ -31,16 +29,6 @@ body {
   /*max-width: 100%;*/
   /*background-color: grey;*/
 }
-
-
-/*.everything-wrapper{
-  background-image:url('../img/geopic1.jpg');
-  position: relative;
-}*/
-
-/*nav > a {
-  padding: 3px 3px 3px 3px;
-}*/
 
 .image-container {
   max-width: 25%;
