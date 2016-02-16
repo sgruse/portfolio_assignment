@@ -4,30 +4,27 @@
 
   var objectControllers = {};
 
-  // objectControllers.handleMainNav = function(event) {
-  //   $('#nav-menu li').on('click', 'a', function(){
-  //     console.log($(this));
-  //     $('section').hide();
-  //     $('.' + $(this).data('category')).parent().show();
-  //     $('.' + $(this).data('category')).fadeIn('slow');
-  //   });
-  // };
-
   objectControllers.initIndexPage = function(){
     Project.all.forEach(function(a){
       $('#projectSection').append(a.toHtml());
     });
-    // $('#projectSection').hide();
+    $('#projectSection').hide();
     $('.introduction').hide();
-    // objectControllers.handleMainNav();
   };
 
-  objectControllers.showProjects = function() {
-    console.log('allday');
+  objectControllers.createProjects = function() {
+    console.log('projectscreated');
     Project.all.forEach(function(a){
       $('#projectSection').append(a.toHtml());
     });
+  };
+
+  objectControllers.showProjects = function() {
+    console.log('showProjects');
+    // Project.fetchAll();
+    objectControllers.createProjects();
     $('#projectSection').fadeIn('slow');
+    console.log('isnt working');
   };
 
   module.objectControllers = objectControllers;

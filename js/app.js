@@ -33,7 +33,7 @@
   };
 
   Project.fetchAll = function(){
-    // console.log('fetchAll');
+    console.log('fetchAll');
     if(localStorage.gitProjects){
       $.ajax({
         type: 'HEAD',
@@ -45,14 +45,13 @@
             Project.getData();
           } else {
             Project.loadAll(JSON.parse(localStorage.gitProjects));
-            objectControllers.initIndexPage();
           }
         }
       });
 
     } else {
       Project.getData();
-      objectControllers.initIndexPage();
+      next();
     }
   };
 
@@ -60,9 +59,9 @@
     $.getJSON('data/projects.json', function(gitProjects){
       Project.loadAll(gitProjects);
       localStorage.gitProjects = JSON.stringify(gitProjects);
-      // objectControllers.handleMainNav();
     });
   };
 
   module.Project = Project;
+  Project.fetchAll();
 })(window);

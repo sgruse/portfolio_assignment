@@ -1,19 +1,14 @@
 (function(module) {
 
   var projectControllers = {};
-  projectControllers.index = function() {
-    Project.fetchAll(objectControllers.showProjects);
-    console.log('projectController');
 
+  projectControllers.index = function() {
+    $('#projectSection').empty();
+    // Project.fetchAll();
     $('section').hide();
-    $('#projectSection').show();
+    objectControllers.showProjects();
+    console.log('projectController');
   };
   module.projectControllers = projectControllers;
-
-  // workControllers.project = function() {
-  //   Project.getData();
-  // }
-
-
 
 })(window);

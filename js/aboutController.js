@@ -3,10 +3,10 @@
   var aboutControllers = {};
 
   aboutControllers.index = function() {
-    
+
 
     $('section').hide();
-    $('.introduction').show();
+    $('.introduction').fadeIn();
   };
   module.aboutControllers = aboutControllers;
 
