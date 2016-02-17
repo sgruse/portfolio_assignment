@@ -1,18 +1,21 @@
+.background-image {
+  background-image: url('../img/grusebg.jpg');
+}
+
 footer {
-  background-color: grey;
-  margin-top: 30px;
+  /*background-color: grey;*/
+  /*margin-top: 30px;*/
 }
 
-main {
+/*main {
   overflow: auto;
-}
+}*/
 
-
+/*
 .main-page {
-  outline: dotted;
   max-width: 100%;
   height: 100%;
-}
+}*/
 
 .wallpaper {
   width: 100%;
