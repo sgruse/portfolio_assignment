@@ -9,6 +9,18 @@
     objectControllers.showProjects();
     console.log('projectController');
   };
+
+
+  projectControllers.repo = function(ctx, next) {
+    repos.requestRepos(repoView.index);
+    $('#projectSection').show();
+
+    ctx.handled = true;
+    next();
+  };
+
+
+
   module.projectControllers = projectControllers;
 
 })(window);

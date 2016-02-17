@@ -8,7 +8,6 @@
     $('section').hide();
     $('.introduction').fadeIn();
   };
-  module.aboutControllers = aboutControllers;
 
   // workControllers.project = function() {
   //   Project.getData();
@@ -16,4 +15,5 @@
 
 
 
+  module.aboutControllers = aboutControllers;
 })(window);
