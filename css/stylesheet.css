@@ -1,105 +1,74 @@
 body {
   margin: none;
+  background-color: #808C91;
 }
 
-.background-image {
-  background-image: url('../img/grusebg.jpg');
+.background-div {
   margin-left: -10px;
   margin-right: -10px;
-  /*width: 100%;*/
+  margin-top: -10px;
+  /*text-align: center;*/
+  justify-content: center;
+  align-items: center;
 }
-
 /*NAV BAR*/
 
 .main-nav {
   display: flex;
+  justify-content: flex-end;
+  margin: 0px 0px 0px 0px;
+  padding-top: 2%;
+  padding-right: 20%;
+  width: 100%;
+  min-width: 400px;
 }
 
 .nav-ul {
-  
+  display: inline-flex;
+  padding: 0px;
+  margin: 0px;
 }
 
-
-.topHead {
- padding: 20px;
- position: relative;
- text-align: center;
- max-width: 100%;
- /*background-color: grey;*/
-
-
+.nav-ul li {
+  /*flex-direction: row;*/
+  list-style: none;
+  padding-left: 1%;
+  padding-right: 1%;
 }
 
-.topHead::after{
-  content: "";
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  position: absolute;
-  opacity: .07;
-  z-index: -1;
-  /*background-image:url('../img/geopic1.jpg');*/
+.nav-ul li a {
+  text-decoration: none;
+  color: white;
+  font: "helvetica";
+  font-family: sans-serif;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
+/*HOMEPAGE CONTENT*/
 
-.image-container {
-  max-width: 25%;
+.main-page {
+  display: flex;
+  justify-content: center;
+  /*align-items: center;*/
+  height: 100%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  background-color: none;
 }
+
+.squareimgarticle {
+  display: flex;
+  background-color: none;
+}
+
+.sam-square {
+  padding:
+}
+
+/*RESIZES PROJECT PICS*/
 
 .displayPic {
-  max-width: 100%;
-}
-
-.show-menu {
-  font-family: "Helvetica Neue";
-  text-decoration: none;
-  color: #fff;
-  background: #19c589;
-  text-align: center;
-  padding: 10px 0;
-  display: none;
-}
-
-input[type=checkbox]:checked ~ #menu {
-  display: block;
-}
-
-#projectSection{
-  display: inline;
-}
-
-main {
-  height: calc(100vh - 300px);
-  padding: 30px 30px 30px 30px;
-}
-
-footer {
-  /*padding: 20px;*/
-  /*background: #666;*/
-  /*max-height: 30px;*/
-}
-
-.main-page-pic {
-  max-width: 100%;
-}
-
-.floating-title{
-  outline: dotted;
-  height: 150px;
-  width: 100px;
-  position: absolute;
-}
-
-  @media screen and (min-width: 600px){
-
-ul {
-  position: static;
-}
-
-li {
-  margin-bottom: 1px;
-}
-
+  width: 200px;
+  height: 200px;
 }
