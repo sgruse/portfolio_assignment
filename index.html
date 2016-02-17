@@ -4,13 +4,15 @@
     <meta charset="utf-8">
     <meta name=”viewport” content=”width=device-width, initial-scale=1”>
     <title>Portfolio</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="css/icons.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/states.css">
-    <link rel="stylesheet" href="css/module.css">
+    <!-- <link rel="stylesheet" href="css/layout.css"> -->
+    <!-- <link rel="stylesheet" href="css/base.css"> -->
+    <!-- <link rel="stylesheet" href="css/states.css"> -->
+    <!-- <link rel="stylesheet" href="css/module.css"> -->
+
+<!-- PROJECTS TEMPLATE -->
 
     <script type="text/x-handlebars-template" id="entry-template">
         <section class="projects" data-author="{{author}}">
@@ -31,31 +33,41 @@
             </article>
           </article>
         </section>
-
     </script>
+
+<!-- REPO TEMPLATE -->
+
+    <script type="text/x-handlebars-template" id="repo-template">
+      <li>
+        <a href="{{html_url}}" target="blank"><h3>{{name}}</h3></a>
+          <p>Description: {{description}}</p>
+          <p>Language: {{language}}</p>
+      </li>
+    </script>
+
   </head>
 
+<!-- BODY -->
+
   <body>
-      <header class="topHead">
-        <h1>Sam Gruse</h1>
-      </header>
-
-      <nav class="nav">
-        <ul id="nav-menu" class="hidden flex-box">
+<!-- BACKGROUND IMAGE DIV -->
+    <div class="background-image">
+<!-- NAV BAR -->
+      <nav class="main-nav">
+        <ul class="nav-ul">
           <li class="tab"><a href="/" data-category="main-page">Home</a></li>
-          <li class="tab"><a href="/project" data-category="projects">Projects</a>
-            <ul class="hidden absolute">
-            </ul>
-          </li>
+          <li class="tab"><a href="/project" data-category="projects">Projects</a></li>
           <li class="tab"><a href="/about" data-category="introduction">About</a></li>
-        <li>
-          <a href="http://www.gmail.com">Connect</a>
-        </li>
-      </ul>
-    </nav>
-
+          <li><a href="http://www.gmail.com">Connect</a></li>
+        </ul>
+      </nav>
+<!-- MAIN SECTION -->
     <main>
+
       <section id="projectSection">
+        <ul>
+          <!-- GITHUB REPO SECTION -->
+        </ul>
       </section>
       <section class="introduction">
         <h3>About me:</h3>
@@ -68,11 +80,12 @@
       </section>
 
       <section class="main-page">
+        <img src="img/samgrusesquare.png"/>
         <p></p>
       </section>
 
     </main>
-
+  </div>
     <footer></footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
@@ -88,6 +101,11 @@
     <script src="js/appController.js"></script>
     <script src="js/aboutController.js"></script>
     <script src="js/projectController.js"></script>
+
+    <script src="js/repo.js"></script>
+    <script src="js/repoView.js"></script>
+
+    <script src=".git/.gitignore/githubToken.js"></script>
 
     <script src="js/routes.js"></script>
     <script>

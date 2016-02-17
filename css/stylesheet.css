@@ -1,10 +1,31 @@
+body {
+  margin: none;
+}
+
+.background-image {
+  background-image: url('../img/grusebg.jpg');
+  margin-left: -10px;
+  margin-right: -10px;
+  /*width: 100%;*/
+}
+
+/*NAV BAR*/
+
+.main-nav {
+  display: flex;
+}
+
+.nav-ul {
+  
+}
+
 
 .topHead {
  padding: 20px;
  position: relative;
  text-align: center;
  max-width: 100%;
- background-color: grey;
+ /*background-color: grey;*/
 
 
 }
@@ -19,16 +40,9 @@
   position: absolute;
   opacity: .07;
   z-index: -1;
-  background-image:url('../img/geopic1.jpg');
+  /*background-image:url('../img/geopic1.jpg');*/
 }
 
-body {
-  /*background-image:url('../img/geopic1.jpg');*/
-  /*background-image:url('../img/portfolio.jpg');*/
-  position: relative;
-  /*max-width: 100%;*/
-  /*background-color: grey;*/
-}
 
 .image-container {
   max-width: 25%;
@@ -57,22 +71,15 @@ input[type=checkbox]:checked ~ #menu {
 }
 
 main {
-  /*display: flex;
-  flex-direction: column;*/
   height: calc(100vh - 300px);
   padding: 30px 30px 30px 30px;
 }
 
 footer {
-  padding: 20px;
-  background: #666;
+  /*padding: 20px;*/
+  /*background: #666;*/
+  /*max-height: 30px;*/
 }
-
-/*.main-page-image {
-  outline: dotted;
-  max-width: 100%;
-  position: relative;
-}*/
 
 .main-page-pic {
   max-width: 100%;
@@ -89,15 +96,10 @@ footer {
 
 ul {
   position: static;
-  /*display: none;*/
 }
 
 li {
   margin-bottom: 1px;
 }
-/*
-.show-menu {
-  display: block;
-}*/
 
 }
