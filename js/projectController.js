@@ -4,7 +4,6 @@
 
   projectControllers.index = function() {
     $('#projectSection').empty();
-    // Project.fetchAll();
     $('section').hide();
     objectControllers.showProjects();
     console.log('projectController');
