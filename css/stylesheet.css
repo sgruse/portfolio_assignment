@@ -45,6 +45,23 @@ body {
   padding-right: 10px;
 }
 
+.icon {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+.hidden {
+  display: flex;
+  justify-content: space-around;
+
+}
+
 /*HOMEPAGE CONTENT*/
 
 .main-page {
@@ -69,6 +86,40 @@ body {
 /*RESIZES PROJECT PICS*/
 
 .displayPic {
-  width: 200px;
-  height: 200px;
+  /*width: 200px;
+  height: 200px;*/
+  max-width: 80%;
+  padding: 10px 10px 10px 10px;
+}
+
+#projectSection{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.image-container{
+  display: flex;
+}
+
+.projects{
+  padding: 20px 20px 20px 20px;
+}
+
+
+
+@media only screen and (max-width: 600px){
+
+  .main-nav{
+    justify-content: center;
+  }
+
+  #projectSection{
+    margin-top: 50px;
+    display: flex;
+    /*justify-content: center;*/
+    /*flex-direction: column;*/
+    background-color: white;
+  }
 }

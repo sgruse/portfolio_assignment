@@ -32,7 +32,7 @@
     });
   };
 
-  Project.fetchAll = function(){
+  Project.fetchAll = function(next){
     console.log('fetchAll');
     if(localStorage.gitProjects){
       $.ajax({
