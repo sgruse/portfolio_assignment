@@ -92,11 +92,14 @@ li {
   padding: 10px 10px 10px 10px;
 }
 
-#projectSection{
+#projectSection {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
   background-color: white;
+}
+
+.introduction {
 }
 
 .image-container{
@@ -117,9 +120,6 @@ li {
 
   #projectSection{
     margin-top: 50px;
-    display: flex;
-    /*justify-content: center;*/
-    /*flex-direction: column;*/
     background-color: white;
   }
 }
