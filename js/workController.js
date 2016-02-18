@@ -5,7 +5,7 @@
   workControllers.index = function() {
 
     $('section').hide();
-    $('.main-page').show();
+    $('.main-page').fadeIn();
   };
   module.workControllers = workControllers;
 
