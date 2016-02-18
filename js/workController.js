@@ -9,10 +9,4 @@
   };
   module.workControllers = workControllers;
 
-  // workControllers.project = function() {
-  //   Project.getData();
-  // }
-
-
-
 })(window);
