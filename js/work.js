@@ -13,18 +13,16 @@
   };
 
   objectControllers.createProjects = function() {
-    console.log('projectscreated');
     Project.all.forEach(function(a){
       $('#projectSection').append(a.toHtml());
     });
   };
 
-  objectControllers.showProjects = function() {
-    console.log('showProjects');
+  objectControllers.showProjects = function(ctx, next) {
     // Project.fetchAll();
-    objectControllers.createProjects();
+    // objectControllers.createProjects();
     $('#projectSection').fadeIn('slow');
-    console.log('isnt working');
+    next();
   };
 
   module.objectControllers = objectControllers;
