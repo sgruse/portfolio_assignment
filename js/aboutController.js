@@ -2,9 +2,9 @@
 
   var aboutControllers = {};
 
-  aboutControllers.index = function() {
+  aboutControllers.index = function(ctx) {
 
-
+    console.log('about cont ', ctx);
     $('section').hide();
     $('.introduction').fadeIn();
   };

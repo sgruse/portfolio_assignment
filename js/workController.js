@@ -2,8 +2,8 @@
 
   var workControllers = {};
 
-  workControllers.index = function() {
-
+  workControllers.index = function(ctx) {
+    console.log('work cont', ctx);
     $('section').hide();
     $('.main-page').fadeIn();
   };

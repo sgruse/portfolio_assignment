@@ -13,7 +13,6 @@
   Project.prototype.toHtml = function(){
     var source = $('#entry-template').text();
     var template = Handlebars.compile(source);
-    console.log('cat');
 
     this.daysAgo = parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000);
     this.publishStatus = this.publishedOn ? 'published ' + this.daysAgo + ' days ago' : '(draft)';
@@ -33,7 +32,6 @@
   };
 
   Project.fetchAll = function(next){
-    console.log('fetchAll');
     if(localStorage.gitProjects){
       $.ajax({
         type: 'HEAD',
@@ -43,6 +41,7 @@
           if (!localStorage.eTag || eTag !== localStorage.eTag) {
             localStorage.eTag = eTag;
             Project.getData();
+            console.log('fetch all ctx');
           } else {
             Project.loadAll(JSON.parse(localStorage.gitProjects));
           }
